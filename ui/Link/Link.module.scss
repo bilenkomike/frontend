@@ -1,0 +1,23 @@
+.link {
+  display: block;
+  width: 96px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #e40521;
+  }
+
+  &:hover:after {
+    width: 96px;
+    transition: all 0.2s linear;
+  }
+}
